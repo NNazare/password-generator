@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Secure Password Generator | Fast & Free</title>
+
+  <meta name="description" content="Generate strong, secure passwords instantly. Customize length, numbers, and symbols with a modern UI.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Password Generator</h2>
+
+  <div class="output" id="password">********</div>
+
+  <div class="strength-container">
+    <div class="strength-bar" id="strengthBar"></div>
+  </div>
+  <div id="strength">Strength: </div>
+
+  <div class="slider-container">
+    <input type="range" min="1" max="32" value="8" id="lengthSlider">
+    <div class="length">
+      Length: <span id="lengthValue">8</span>
+    </div>
+  </div>
+
+  <div class="options">
+    <label>
+      <input type="checkbox" id="numbers" checked>
+      Include numbers
+    </label>
+
+    <label>
+      <input type="checkbox" id="symbols">
+      Include symbols
+    </label>
+  </div>
+
+  <div class="buttons">
+    <button id="generateBtn">Generate Password</button>
+    <button id="copyBtn">
+      <span id="copyIcon"></span> Copy
+    </button>
+  </div>
+
+  <div id="copyFeedback"></div>
+
+</div>
+
+<script src="dist/script.js"></script>
+</body>
+</html>
